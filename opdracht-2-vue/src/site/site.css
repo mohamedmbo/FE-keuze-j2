@@ -1,0 +1,32 @@
+/* Thema bovenop Bootstrap 5: kleuren en een eigen knopvariant */
+:root {
+  --accent: #fbb724;
+  --dark: #1f2a30;
+  --light: #f3f3f3;
+  --bs-body-color: #6b7570;
+  --bs-body-font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  --bs-heading-color: var(--dark);
+  --bs-link-color: var(--accent);
+}
+h1, h2, h3, h4 { color: var(--dark); }
+a { text-decoration: none; }
+
+.btn-accent {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--dark);
+  --bs-btn-hover-border-color: var(--dark);
+  --bs-btn-active-bg: var(--dark);
+  --bs-btn-active-border-color: var(--dark);
+}
+.btn-dark { --bs-btn-bg: var(--dark); --bs-btn-border-color: var(--dark); --bs-btn-hover-bg: var(--accent); --bs-btn-hover-border-color: var(--accent); }
+.btn-accent, .btn-dark {
+  border-radius: 0; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  padding: .75rem 1.5rem; transition: background .25s, border-color .25s, transform .25s;
+}
+.btn-accent:hover, .btn-dark:hover { transform: translateY(-2px); }
+.text-accent { color: var(--accent) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+.dash { display: block; width: 20px; height: 3px; background: var(--accent); margin: 12px 0; }
